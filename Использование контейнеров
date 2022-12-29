@@ -1,0 +1,24 @@
+#include 
+#include  
+
+using namespace std;
+int sum;
+int main() {
+    setlocale(LC_ALL, "ru");
+    int h, b;
+    cout << "Значение первого вектора: ";
+    cin >> h;
+    cout << "Значение второго вектора: ";
+    cin >> b;
+    vector  vector_first(h);
+
+    vector  vector_second;
+    vector_second.reserve(b);
+    sum = h + b;
+
+    if (sum > 9 && sum < 100)
+        std::cout << "Сумма элементов является двухзначным числом";
+    else
+        std::cout << "Сумма элементов не является двухзначным числом";
+}
+     
